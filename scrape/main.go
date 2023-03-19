@@ -24,9 +24,10 @@ func main() {
 	now := 1
 
 	for {
-		result := getImageUrls("dahlia flower", 10, now)
+		result := getImageUrls("dandelion flower", 10, now)
+		log.Println("Success getting image urls")
 		for _, res := range result {
-			saveImageFromUrl(res, "../datasets/dahlia")
+			saveImageFromUrl(res, "../datasets/dandelion")
 		}
 
 		now += 10
